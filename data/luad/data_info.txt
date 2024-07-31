@@ -1,0 +1,22 @@
+1.  LUAD_outlying_gene_names.csv: Luu ten LUAD Outlying Gene 
+2.  O.feat-final.csv: 3 thuoc tinh cua Outlying Gene o LUAD
+3.  P.feat-final.csv: 19 thuoc tinh cua Gene o LUAD
+4.  R.feat-final.csv: 4 thuoc tinh cua miRNA o LUAD
+5.  P.feat-pre.csv: 19 thuoc tinh cua Gene sau khi pretrain
+6.  R.feat-pre.csv: 19 thuoc tinh cua miRNA sau khi pretrain
+7.  O.adj_loop.npz: ma tran ke PO with self_loop. (adj + matran duong cheo chinh =1)
+8.  O.N_all.npz:  bac cua tung dong trong adj, duong cheo chinh co gia tri bang: 2/(tong_hang_adj * (tong_hang_adj - 1))
+9.  PO.adj.npz: ma tran ke PO sau khi chuan hoa
+10. PP.adj.npz: ma tran ke PP sau khi chuan hoa
+11. PR.adj.npz: ma tran ke PR sau khi chuan hoa
+12. k_sets.pkl: luu cac fold cua pan-cancer, trong luad no ko anh huong gi den viec train. Them vao cho du tham so ham load_data()
+13. label-file.txt: luu nhan cua luad, trong luad no ko anh huong gi den viec train. Them vao cho du tham so ham load_data()
+14. label-file_P.txt: luu nhan cua luad, dung cho train
+15. pos.txt: danh sach vi tri cac driver gene trong gene_names.txt
+16. neg.txt: danh sach vi tri cac gene binh thuong trong gene_names.txt
+17. O.txt: luu stt cua outlying gene, noi dung file nay khong quan trong, chi quan tam den do dai cua file
+18. P.txt: luu stt cua gene, noi dung file nay khong quan trong, chi quan tam den do dai cua file 
+19. PP_pos.txt: Gene-Gene network
+20. PP.txt: Gene-Gene network
+21. PR_pos: Gene-miRNA network
+22. PR_neg: cac canh khong co trong Gene-miRNA, dung de train cho pretrain.py. dung cho ki thuat Negative Sampling
